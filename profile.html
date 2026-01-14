@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Profile</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo-placeholder">
+    <a href="index.html">
+      <img src="logo.png" class="site-logo" alt="Logo">
+    </a>
+  </div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="counsellor.html">Your Counsellor</a>
+    <a href="monkey.html">Accountability Monkey</a>
+    <a href="forums.html">Forums</a>
+    <a href="profile.html" class="active">Profile</a>
+  </nav>
+
+  <!-- PROFILE AREA (CONNECTED TO header.js) -->
+  <div class="profile-area">
+    <button class="profile-icon" id="profileBtn">👤</button>
+
+    <div class="profile-dropdown" id="profileDropdown">
+      <a href="auth.html">🔐 Login</a>
+      <a href="auth.html#signup">✨ Sign up</a>
+    </div>
+  </div>
+</header>
+
+<section class="profile-page">
+
+  <!-- TOP CARD -->
+  <div class="profile-card">
+    <div class="avatar">👤</div>
+    <div>
+      <h2 id="username">Anonymous User</h2>
+      <p class="meta">Age: 18–24 · Member since Jan 2026</p>
+      <span class="privacy-badge">🔒 Private</span>
+    </div>
+  </div>
+
+  <!-- SNAPSHOT -->
+  <div class="snapshot">
+    <div class="snap-card">
+      <h3>🔥 Streak</h3>
+      <p>7 days</p>
+    </div>
+    <div class="snap-card">
+      <h3>📝 Diaries</h3>
+      <p>12 entries</p>
+    </div>
+    <div class="snap-card">
+      <h3>🙂 Avg Mood</h3>
+      <p>3.8 / 5</p>
+    </div>
+    <div class="snap-card">
+      <h3>⚠️ Risk</h3>
+      <p class="low">Low</p>
+    </div>
+  </div>
+
+  <!-- GOALS -->
+  <div class="section">
+    <h3>My Goal</h3>
+    <div class="chips">
+      <span class="chip active">Reduce urges</span>
+      <span class="chip">Prevent relapse</span>
+      <span class="chip">Build discipline</span>
+      <span class="chip">Just exploring</span>
+    </div>
+  </div>
+
+  <!-- PATTERNS -->
+  <div class="section">
+    <h3>My Patterns</h3>
+    <div class="chips">
+      <span class="chip">Stress</span>
+      <span class="chip">Loneliness</span>
+      <span class="chip">Night time</span>
+      <span class="chip">Boredom</span>
+    </div>
+  </div>
+
+  <!-- ACTIVITY -->
+  <div class="section">
+    <h3>Recent Activity</h3>
+    <ul class="activity">
+      <li>📝 Wrote a diary entry</li>
+      <li>🔥 Completed daily check-in</li>
+      <li>📚 Read an article</li>
+      <li>💪 Reached 7-day streak</li>
+    </ul>
+  </div>
+
+  <!-- PRIVACY -->
+  <div class="section privacy-section">
+    <h3>Privacy & Sharing</h3>
+
+    <label>
+      <input type="checkbox" checked>
+      Share mood summaries with counsellor
+    </label>
+
+    <label>
+      <input type="checkbox">
+      Share selected diary entries
+    </label>
+
+    <label>
+      <input type="checkbox">
+      Share relapse logs
+    </label>
+
+    <p class="note">
+      You control what professionals can see. You can change this anytime.
+    </p>
+  </div>
+
+</section>
+
+<script src="profile.js"></script>
+<script src="header.js"></script>
+</body>
+</html>

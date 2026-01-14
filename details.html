@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tell Us About You</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="details.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo-placeholder">
+    <a href="index.html">
+      <img src="logo.png" class="site-logo" alt="Logo">
+    </a>
+  </div>
+
+  <!-- PROFILE AREA (for consistency, even if empty) -->
+  <div class="profile-area">
+    <button class="profile-icon" id="profileBtn">👤</button>
+    <div class="profile-dropdown" id="profileDropdown">
+      <a href="auth.html">🔐 Login</a>
+      <a href="auth.html#signup">✨ Sign up</a>
+    </div>
+  </div>
+</header>
+
+<section class="details-page">
+
+  <h1>Let’s get to know you</h1>
+  <p class="intro">
+    This helps us personalize your experience.  
+    You can skip or edit anything later.
+  </p>
+
+  <!-- ================= SECTION A ================= -->
+  <div class="details-section">
+    <h2>About You</h2>
+
+    <label>
+      What should we call you?
+      <input type="text" id="displayName" placeholder="Your name or alias">
+    </label>
+
+    <label>
+      Age range
+      <select id="ageRange">
+        <option value="">Select</option>
+        <option>Under 18</option>
+        <option>18–24</option>
+        <option>25–34</option>
+        <option>35–44</option>
+        <option>45+</option>
+      </select>
+    </label>
+
+    <label>
+      Why are you here?
+      <select id="primaryGoal">
+        <option value="">Select</option>
+        <option>Reduce urges</option>
+        <option>Prevent relapse</option>
+        <option>Build discipline & habits</option>
+        <option>Understand my behavior</option>
+        <option>Just exploring</option>
+      </select>
+    </label>
+
+    <label>
+      How are you feeling these days?
+      <div class="mood-options" id="moodOptions">
+        <span data-value="Struggling">😔 Struggling</span>
+        <span data-value="Managing">😐 Managing</span>
+        <span data-value="Stable">🙂 Stable</span>
+        <span data-value="Strong">💪 Feeling strong</span>
+      </div>
+    </label>
+  </div>
+
+  <!-- ================= SECTION B ================= -->
+  <div class="details-section clinical">
+    <h2>Recovery Context (Optional)</h2>
+    <p class="note">
+      This information is optional and helps counsellors understand your situation better.
+    </p>
+
+    <div class="field">
+      <span class="field-title">Areas you struggle with</span>
+      <div class="checkbox-group">
+        <label><input type="checkbox" value="Substances"><span>Substances</span></label>
+        <label><input type="checkbox" value="Alcohol"><span>Alcohol</span></label>
+        <label><input type="checkbox" value="Smoking"><span>Smoking / Nicotine</span></label>
+        <label><input type="checkbox" value="Porn"><span>Porn / Compulsive behavior</span></label>
+        <label><input type="checkbox" value="Gaming"><span>Gaming / Screen usage</span></label>
+      </div>
+    </div>
+
+    <label>
+      How long has this been affecting you?
+      <select id="duration">
+        <option value="">Select</option>
+        <option>Less than 6 months</option>
+        <option>6–12 months</option>
+        <option>1–3 years</option>
+        <option>3+ years</option>
+      </select>
+    </label>
+
+    <label>
+      How intense does it feel overall?
+      <select id="severity">
+        <option value="">Select</option>
+        <option>Mild</option>
+        <option>Moderate</option>
+        <option>Severe</option>
+      </select>
+    </label>
+
+    <div class="field">
+      <span class="field-title">Common triggers</span>
+      <div class="checkbox-group">
+        <label><input type="checkbox" value="Stress"><span>Stress</span></label>
+        <label><input type="checkbox" value="Loneliness"><span>Loneliness</span></label>
+        <label><input type="checkbox" value="Boredom"><span>Boredom</span></label>
+        <label><input type="checkbox" value="Night"><span>Night time</span></label>
+        <label><input type="checkbox" value="Social"><span>Social situations</span></label>
+      </div>
+    </div>
+
+    <label class="consent">
+      <input type="checkbox" id="shareClinical">
+      <span>Allow counsellors to view this information</span>
+    </label>
+  </div>
+
+  <button id="continueBtn" class="continue-btn">
+    Continue to my profile
+  </button>
+
+</section>
+
+<script src="details.js"></script>
+<script src="header.js"></script>
+</body>
+</html>

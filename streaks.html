@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Motivational Streaks</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="streaks.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo-placeholder">
+    <a href="index.html">
+      <img src="logo.png" class="site-logo" alt="Logo">
+    </a>
+  </div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="counsellor.html">Your Counsellor</a>
+    <a href="monkey.html">Accountability Monkey</a>
+    <a href="forums.html">Forums</a>
+  </nav>
+
+  <!-- ✅ PROFILE AREA (ADDED) -->
+  <div class="profile-area">
+    <button class="profile-icon" id="profileBtn">👤</button>
+
+    <div class="profile-dropdown" id="profileDropdown">
+      <a href="auth.html">🔐 Login</a>
+      <a href="auth.html#signup">✨ Sign up</a>
+    </div>
+  </div>
+</header>
+
+
+<section class="streaks-page">
+
+  <!-- QUESTIONS -->
+  <div class="questions-panel">
+    <h1 class="panel-title">Daily Check-In</h1>
+
+    <div class="question" data-q="0">
+      <h3>How are you feeling today?</h3>
+      <div class="rating-row"></div>
+      <textarea class="extra-input" placeholder="Gently describe how you’re feeling…"></textarea>
+    </div>
+
+    <div class="question" data-q="1">
+      <h3>How strong are urges today?</h3>
+      <div class="rating-row"></div>
+      <textarea class="extra-input" placeholder="What’s triggering these urges?"></textarea>
+    </div>
+
+    <div class="question" data-q="2">
+      <h3>Your mental clarity right now?</h3>
+      <div class="rating-row"></div>
+      <textarea class="extra-input" placeholder="What’s clouding your thoughts?"></textarea>
+    </div>
+
+    <div class="question" data-q="3">
+      <h3>Stress level today?</h3>
+      <div class="rating-row"></div>
+      <textarea class="extra-input" placeholder="What’s weighing on you today?"></textarea>
+    </div>
+
+    <div class="question" data-q="4">
+      <h3>Overall self-control today?</h3>
+      <div class="rating-row"></div>
+      <textarea class="extra-input" placeholder="Where did you struggle today?"></textarea>
+    </div>
+
+    <button id="submitBtn">Submit Today’s Check-In</button>
+  </div>
+
+  <!-- CALENDAR -->
+  <div class="calendar-panel">
+    <div class="calendar-header">
+      <button id="prevMonth">‹</button>
+      <h2 id="monthYear"></h2>
+      <button id="nextMonth">›</button>
+    </div>
+
+    <div class="calendar-weekdays">
+      <span>Sun</span><span>Mon</span><span>Tue</span>
+      <span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+    </div>
+
+    <div class="calendar-grid" id="calendarGrid"></div>
+  </div>
+
+</section>
+
+
+<script src="streaks.js"></script>
+<script src="header.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+.details-page {
+  max-width: 720px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.details-page h1 {
+  margin-bottom: 8px;
+}
+
+.intro {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* SECTION */
+.details-section {
+  background: #f4faf4;
+  padding: 28px;
+  border-radius: 18px;
+  margin-bottom: 40px;
+}
+
+.details-section.clinical {
+  background: #f6f8fb;
+}
+
+.details-section h2 {
+  margin-bottom: 16px;
+}
+
+.details-section label {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+/* INPUTS */
+.details-section input[type="text"],
+.details-section select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+/* MOOD */
+.mood-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.mood-options span {
+  padding: 8px 14px;
+  background: #eaf2ec;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.mood-options span.active {
+  background: #7fbf7f;
+  color: white;
+}
+
+/* CHECKBOX GROUPS */
+.field {
+  margin-bottom: 18px;
+}
+
+.field-title {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.checkbox-group input {
+  margin: 0;
+}
+
+/* NOTES */
+.note {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 18px;
+}
+
+/* CONSENT */
+.consent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  margin-top: 14px;
+}
+
+/* BUTTON */
+.continue-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 16px;
+  background: #7fbf7f;
+  color: white;
+  cursor: pointer;
+}

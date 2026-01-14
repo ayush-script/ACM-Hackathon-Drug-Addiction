@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Daily Diary</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="diary.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo-placeholder">
+    <a href="index.html">
+      <img src="logo.png" class="site-logo" alt="Logo">
+    </a>
+  </div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="counsellor.html">Your Counsellor</a>
+    <a href="monkey.html">Accountability Monkey</a>
+    <a href="forums.html">Forums</a>
+  </nav>
+
+  <!-- ✅ PROFILE AREA (ADDED) -->
+  <div class="profile-area">
+    <button class="profile-icon" id="profileBtn">👤</button>
+
+    <div class="profile-dropdown" id="profileDropdown">
+      <a href="auth.html">🔐 Login</a>
+      <a href="auth.html#signup">✨ Sign up</a>
+    </div>
+  </div>
+</header>
+
+
+<section class="diary-page">
+
+  <div class="diary-header">
+    <div>
+      <h1>Daily Diary</h1>
+      <p>Write freely. This space is yours.</p>
+    </div>
+
+    <button id="openCompose" class="add-btn">+</button>
+  </div>
+
+  <div id="entriesContainer" class="entries-container"></div>
+
+</section>
+
+<!-- COMPOSE MODAL -->
+<div id="composeModal" class="compose-modal hidden">
+  <div class="compose-box">
+
+    <!-- TOP -->
+    <div class="compose-top">
+      <span id="composeDate"></span>
+      <span id="composeTime"></span>
+    </div>
+
+    <!-- TOPIC -->
+    <input id="topicInput" type="text" placeholder="What’s today’s topic?" />
+
+    <!-- TOOLBAR -->
+    <div class="toolbar">
+      <button data-cmd="bold"><b>B</b></button>
+      <button data-cmd="italic"><i>I</i></button>
+      <button data-cmd="insertUnorderedList">•</button>
+      <button id="attachBtn">📎</button>
+      <button id="emojiBtn">🙂</button>
+      <input type="file" id="imageInput" accept="image/png, image/jpeg" hidden>
+    </div>
+
+    <!-- EMOJI -->
+    <div id="emojiPicker" class="emoji-picker hidden">
+      😀 😅 😂 😊 😍 😌 😔 😢 😤 😴 🙏 💪 ❤️
+    </div>
+
+    <!-- EDITOR -->
+    <div id="editor" class="editor" contenteditable="true"></div>
+
+    <!-- FOOTER -->
+    <div class="compose-bottom">
+      <div class="privacy">
+        <span id="publicBtn" class="active">🔓 Public</span>
+        <span id="privateBtn">🔒 Private</span>
+      </div>
+      <button id="submitEntry" class="submit-btn">Submit</button>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="diary.js"></script>
+<script src="header.js"></script>
+</body>
+</html>
