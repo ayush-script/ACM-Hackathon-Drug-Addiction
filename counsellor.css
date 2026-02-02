@@ -1,13 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
+/* ================= COUNSELLOR PAGE ONLY ================= */
+
+/* IMPORTANT:
+   DO NOT RESET GLOBAL FONTS HERE
+   Header + navbar are controlled by style.css
+*/
 
 body {
   background: #fdf4e7;
   color: #3e2f1c;
+}
+
+/* Scope font ONLY to counsellor content */
+.counsellor-section,
+.counsellor-section * {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .counsellor-section {

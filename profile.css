@@ -64,13 +64,21 @@
   margin-top: 6px;
 }
 
-.low {
-  color: #2f8f5b;
+.subtext {
+  font-size: 12px;
+  color: #777;
 }
 
 /* SECTIONS */
 .section {
   margin-bottom: 36px;
+}
+
+.section.highlight {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.05);
 }
 
 .section h3 {
@@ -89,7 +97,6 @@
   border-radius: 18px;
   background: #eef4ef;
   font-size: 14px;
-  cursor: pointer;
 }
 
 .chip.active {
@@ -97,13 +104,15 @@
   color: white;
 }
 
-/* ACTIVITY */
-.activity {
+/* LISTS */
+.activity,
+.journey {
   list-style: none;
   padding-left: 0;
 }
 
-.activity li {
+.activity li,
+.journey li {
   margin-bottom: 8px;
   color: #444;
 }
