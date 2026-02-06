@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <title>Mental Peace</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="monkey-float.css" />
 </head>
 <body>
 
 <header class="navbar">
-  <!-- LOGO -->
   <div class="logo-placeholder">
     <a href="index.html">
       <img src="logo.png" alt="Mental Peace Logo" class="site-logo">
@@ -22,10 +22,8 @@
     <a href="forums.html">Forums</a>
   </nav>
 
-  <!-- PROFILE AREA -->
-  <div class="profile-area" id="profileArea">
+  <div class="profile-area">
     <div class="profile-icon" id="profileBtn">👤</div>
-
     <div class="profile-dropdown" id="profileDropdown">
       <a href="auth.html">🔐 Login</a>
       <a href="auth.html#signup">✨ Sign up</a>
@@ -33,81 +31,120 @@
   </div>
 </header>
 
-<!-- HERO SECTION -->
-<section class="section split">
+<!-- HERO -->
+<section class="section split hero">
   <div class="text">
     <h1>Find Calm. Find Clarity.</h1>
-    <p>
-      A warm, safe space designed for mental peace,
-      reflection, and emotional growth.
+    <p class="hero-sub">
+      A safe, private space to regain control, build consistency,
+      and move forward — one day at a time.
     </p>
+
+    <div class="hero-actions">
+      <a href="monkey.html" class="primary-btn">Start Check-In</a>
+      <a href="forums.html" class="secondary-btn">Explore Community</a>
+    </div>
   </div>
 
   <div class="image">
-    <img
-      src="https://images.unsplash.com/photo-1527137342181-19aab11a8ee8"
-      alt="Mental peace"
-    />
+    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773" alt="Calm workspace">
   </div>
 </section>
 
-<!-- YOUR THERAPIST -->
-<section class="section split">
-  <div class="text">
-    <h2>Your Therapist</h2>
-    <p>
-      Talk freely in a private, judgment-free environment.
-      Reflect, heal, and understand yourself better.
-    </p>
-  </div>
+<!-- TRUST -->
+<section class="trust-section">
+  <h2>Why People Choose Mind Monkey</h2>
 
-  <div class="image">
-    <img
-      src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf"
-      alt="Therapy session"
-    />
-  </div>
-</section>
+  <div class="trust-grid">
+    <div class="trust-card">
+      <img class="trust-icon" src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png">
+      <h4>Private & Anonymous</h4>
+      <p>Your journey stays yours. No judgment. No pressure.</p>
+    </div>
 
-<!-- ACCOUNTABILITY MONKEY -->
-<section class="section split reverse">
-  <div class="text">
-    <h2>Accountability Monkey</h2>
-    <p>
-      Friendly nudges and gentle accountability
-      to help you stay consistent without pressure.
-    </p>
-  </div>
+    <div class="trust-card">
+      <img class="trust-icon" src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png">
+      <h4>Psychology-Based</h4>
+      <p>Built around habit science, not motivation myths.</p>
+    </div>
 
-  <div class="image">
-    <img
-      src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"
-      alt="Accountability"
-    />
+    <div class="trust-card">
+      <img class="trust-icon" src="https://cdn-icons-png.flaticon.com/512/1534/1534938.png">
+      <h4>Support When Urges Hit</h4>
+      <p>You’re not alone when it’s hardest.</p>
+    </div>
+
+    <div class="trust-card">
+      <img class="trust-icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
+      <h4>Progress Without Shame</h4>
+      <p>Slip-ups are learning, not failure.</p>
+    </div>
   </div>
 </section>
 
-<!-- FORUMS -->
-<section class="section split">
-  <div class="text">
-    <h2>Forums</h2>
-    <p>
-      Connect with people who share experiences,
-      support, and understanding. You’re not alone.
-    </p>
-  </div>
+<!-- FEATURES -->
+<section class="section features">
+  <h2 class="center">How It Helps You</h2>
 
-  <div class="image">
-    <img
-      src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-      alt="Community forum"
-    />
+  <div class="feature-grid">
+    <div class="feature">
+      <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773">
+      <h3>🔥 Daily Streaks</h3>
+      <p>Gentle daily check-ins that reward consistency.</p>
+    </div>
+
+    <div class="feature">
+      <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2">
+      <h3>📔 Private Diary</h3>
+      <p>Write freely. No judgment.</p>
+    </div>
+
+    <div class="feature">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+      <h3>💬 Community Forums</h3>
+      <p>People who actually understand.</p>
+    </div>
+
+    <div class="feature">
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e">
+      <h3>🤝 Counsellors</h3>
+      <p>Professional help when you’re ready.</p>
+    </div>
   </div>
 </section>
 
-<!-- 🐵 FLOATING MONKEY CHAT -->
-<link rel="stylesheet" href="monkey-float.css">
+<!-- CTA -->
+<section class="cta">
+  <h2>Start Your Journey Today</h2>
+  <p>Anonymous. Gentle. Real.</p>
+  <a href="auth.html" class="primary-btn">Get Started</a>
+</section>
 
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <h3>Mind Monkey</h3>
+      <p>A gentle accountability system.</p>
+    </div>
+
+    <div>
+      <h4>Explore</h4>
+      <a href="monkey.html">Accountability</a>
+      <a href="forums.html">Forums</a>
+      <a href="diary.html">Diary</a>
+    </div>
+
+    <div>
+      <h4>Connect</h4>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+      <a href="#">Email</a>
+    </div>
+  </div>
+</footer>
+
+<!-- 🐵 FLOATING MONKEY -->
 <div id="monkey-float">
   <img src="monkey-face.png" alt="Monkey">
   <div class="monkey-tooltip">
@@ -115,13 +152,12 @@
   </div>
 </div>
 
-<div id="monkey-chat">
+<!-- 💬 CHAT (HIDDEN BY DEFAULT – IMPORTANT FIX) -->
+<div id="monkey-chat" style="display:none;">
   <div class="chat-header">🐵 Monkey Helper</div>
-
   <div class="chat-body" id="chatBody">
     <div class="bot-msg">Hey 👋 I’m here with you.</div>
   </div>
-
   <div class="chat-input">
     <input type="text" id="chatInput" placeholder="Type here..." />
     <button id="sendBtn">Send</button>
@@ -129,8 +165,7 @@
 </div>
 
 <script src="monkey-float.js"></script>
-
-
+<script src="header.js"></script>
 
 </body>
 </html>

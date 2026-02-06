@@ -132,11 +132,16 @@ body {
 .reverse {
   flex-direction: row-reverse;
 }
+.text {
+  padding-bottom: 20px;
+}
+
 
 .text h1 {
   font-size: 42px;
-  margin-bottom: 16px;
+  margin-bottom: 24px; /* ⬅️ important */
 }
+
 
 .text h2 {
   font-size: 32px;
@@ -167,4 +172,243 @@ body {
   display: flex;
   align-items: center;
   min-width: 180px;   /* gives logo breathing space */
+}
+
+/* HERO ACTIONS */
+.hero-sub {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.hero-actions {
+  margin-top: 32px;
+}
+
+
+
+.primary-btn {
+  background: #f0b26b;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.secondary-btn {
+  border: 2px solid #f0b26b;
+  padding: 10px 22px;
+  border-radius: 24px;
+  text-decoration: none;
+  color: #6a4a2e;
+}
+
+/* TRUST */
+.trust-section {
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 26px;
+  margin-top: 50px;
+}
+
+.trust-card {
+  background: white;
+  padding: 26px 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.trust-card img {
+  width: 56px;
+  margin-bottom: 14px;
+}
+
+.trust-card h4 {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.trust-card p {
+  font-size: 14px;
+  color: #6a5847;
+}
+
+.trust-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(240,178,107,0.45); /* glow */
+}
+
+.trust-icon {
+  width: 42px;
+  margin-bottom: 10px;
+}
+
+.trust-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 14px;
+}
+
+
+/* FEATURES */
+.features .feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature {
+  background: white;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+/* EMPATHY */
+.empathy {
+  text-align: center;
+  padding: 90px 40px;
+  background: rgba(255,255,255,0.6);
+}
+
+.empathy p {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 40px;
+}
+
+.stat {
+  font-weight: 600;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 80px 40px;
+}
+
+/* FOOTER */
+.footer {
+  background: #fff5e6;
+  padding: 50px 40px;
+}
+
+.footer-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footer a {
+  display: block;
+  color: #6a4a2e;
+  margin-top: 8px;
+  text-decoration: none;
+}
+.features .feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.features .feature {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 20px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-align: center;
+}
+
+.features .feature img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 14px;
+}
+
+.features .feature:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(240,178,107,0.45);
+}
+
+/* ================= HEADER VISUAL UPGRADE (ADD ONLY) ================= */
+
+/* Bigger navbar */
+.navbar {
+  padding: 26px 60px;          /* more height */
+  min-height: 90px;
+}
+
+/* Make logo area feel heavier */
+.logo-placeholder {
+  min-width: 220px;
+}
+
+/* Bigger logo */
+.site-logo {
+  height: 48px;
+}
+
+/* Nav links bigger & spaced */
+.nav-links {
+  gap: 44px;
+}
+
+.nav-links a {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+/* Slight underline offset for elegance */
+.nav-links a::before {
+  bottom: -6px;
+}
+
+.nav-links a::after {
+  top: -6px;
+}
+
+/* Profile icon bigger */
+.profile-icon {
+  width: 48px;
+  height: 48px;
+  font-size: 18px;
+}
+
+/* Dropdown spacing fix after bigger header */
+.profile-dropdown {
+  top: 70px;
+}
+
+/* Optional subtle bottom divider */
+.navbar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(0,0,0,0.05);
 }
