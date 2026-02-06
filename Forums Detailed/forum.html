@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Forum</title>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="forum.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo-placeholder">
+    <a href="../index.html">
+      <img src="../logo.png" class="site-logo" alt="Logo">
+    </a>
+  </div>
+
+  <nav class="nav-links">
+    <a href="../forums.html" class="active">Forums</a>
+  </nav>
+</header>
+
+<section class="forum-page">
+
+  <!-- FORUM HEADER -->
+  <div class="forum-header">
+    <h1 id="forumTitle">Forum</h1>
+    <p id="forumDesc"></p>
+    <span id="forumStats"></span>
+  </div>
+
+  <!-- CREATE POST -->
+  <div class="create-post">
+    <input id="titleInput" placeholder="Title" />
+    <textarea id="postInput" placeholder="Write your thoughts..."></textarea>
+    <button id="postBtn">Post</button>
+  </div>
+
+  <!-- POSTS -->
+  <div id="postsContainer" class="posts"></div>
+
+</section>
+
+<script src="forum.js"></script>
+</body>
+</html>

@@ -64,3 +64,4 @@ if (!userDetails.struggles || userDetails.struggles.length === 0) {
     patternContainer.appendChild(span);
   });
 }
+S

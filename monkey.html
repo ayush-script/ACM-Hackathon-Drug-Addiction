@@ -24,14 +24,12 @@
   </nav>
 
   <div class="profile-area">
-  <button class="profile-icon" id="profileBtn">👤</button>
-
-  <div class="profile-dropdown" id="profileDropdown">
-    <a href="auth.html">🔐 Login</a>
-    <a href="auth.html#signup">✨ Sign up</a>
+    <button class="profile-icon" id="profileBtn">👤</button>
+    <div class="profile-dropdown" id="profileDropdown">
+      <a href="auth.html">🔐 Login</a>
+      <a href="auth.html#signup">✨ Sign up</a>
+    </div>
   </div>
-</div>
-
 </header>
 
 <section class="monkey-page">
@@ -44,7 +42,8 @@
     </div>
   </a>
 
-  <a href="#" class="tile-link">
+  <!-- NOTE: full chatbot page stays separate -->
+  <a href="chatbot-full.html" class="tile-link">
     <div class="tile">
       <div class="icon">✊</div>
       <h2>Relapse Triggers</h2>
@@ -53,25 +52,60 @@
   </a>
 
   <a href="diary.html" class="tile-link">
-  <div class="tile">
-    <div class="icon">📔</div>
-    <h2>Daily Diary</h2>
-    <p>Register how you feel daily, write your thoughts</p>
-  </div>
-</a>
-
+    <div class="tile">
+      <div class="icon">📔</div>
+      <h2>Daily Diary</h2>
+      <p>Register how you feel daily, write your thoughts</p>
+    </div>
+  </a>
 
   <a href="articles.html" class="tile-link">
-  <div class="tile">
-    <div class="icon">📰</div>
-    <h2>Articles</h2>
-    <p>Daily articles to understand your addiction</p>
-  </div>
-</a>
-
+    <div class="tile">
+      <div class="icon">📰</div>
+      <h2>Articles</h2>
+      <p>Daily articles to understand your addiction</p>
+    </div>
+  </a>
 
 </section>
+
+<!-- SHARED HEADER LOGIC -->
 <script src="header.js"></script>
+
+<!-- 🐵 FLOATING MONKEY CHAT (SAFE + WORKING) -->
+<link rel="stylesheet" href="monkey-float.css">
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const container = document.createElement("div");
+    container.innerHTML = `
+      <div id="monkey-float">
+        <img src="monkey-face.png" alt="Monkey">
+        <div class="monkey-tooltip">
+          Need help?<br>Chat with Monkey
+        </div>
+      </div>
+
+      <div id="monkey-chat">
+        <div class="chat-header">🐵 Monkey Helper</div>
+
+        <div class="chat-body" id="chatBody">
+          <div class="bot-msg">Hey 👋 I’m here with you.</div>
+        </div>
+
+        <div class="chat-input">
+          <input type="text" id="chatInput" placeholder="Type here..." />
+          <button id="sendBtn">Send</button>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(container);
+
+    const script = document.createElement("script");
+    script.src = "monkey-float.js";
+    document.body.appendChild(script);
+  });
+</script>
 
 </body>
 </html>

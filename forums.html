@@ -4,11 +4,30 @@
   <meta charset="UTF-8" />
   <title>Community Forums</title>
 
-  <!-- shared styles -->
+  <!-- Shared styles -->
   <link rel="stylesheet" href="style.css" />
-
-  <!-- forum styles -->
   <link rel="stylesheet" href="forums.css" />
+
+  <!-- Reddit-like micro UX -->
+  <style>
+    .forum-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .forum-card {
+      transition: transform 0.15s ease, box-shadow 0.15s ease, border 0.15s ease;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+
+    .forum-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+      border: 1px solid #f0b26b;
+    }
+  </style>
 </head>
 <body>
 
@@ -27,9 +46,8 @@
     <a href="forums.html" class="active">Forums</a>
   </nav>
 
-  <div class="profile-area" id="profileArea">
+  <div class="profile-area">
     <div class="profile-icon" id="profileBtn">👤</div>
-
     <div class="profile-dropdown" id="profileDropdown">
       <a href="auth.html">🔐 Login</a>
       <a href="auth.html#signup">✨ Sign up</a>
@@ -39,7 +57,6 @@
 
 <!-- ================= FORUM PAGE ================= -->
 <section class="forums-page">
-
   <h1 class="forums-title">💬 Community Forums</h1>
   <p class="forums-subtitle">
     Anonymous, supportive spaces to share, learn, and grow together.
@@ -47,95 +64,146 @@
 
   <div class="forum-list">
 
-    <div class="forum-card">
-      <h2>m/DailyStreak</h2>
-      <p>Post your daily streaks and stay consistent.</p>
-      <span>👥 18.2k members · 🟢 312 online</span>
-    </div>
+    <a href="Forums Detailed/forum.html?name=DailyStreak" class="forum-link">
+      <div class="forum-card">
+        <h2>m/DailyStreak</h2>
+        <p>Post your daily streaks and stay consistent.</p>
+        <span>👥 18.2k members · 🟢 312 online</span>
+      </div>
+    </a>
 
-    <div class="forum-card">
-      <h2>m/RelapseRegret</h2>
-      <p>A safe space to talk after relapse, without judgment.</p>
-      <span>👥 12.4k members · 🟢 187 online</span>
-    </div>
+    <a href="Forums Detailed/forum.html?name=RelapseRegret" class="forum-link">
+      <div class="forum-card">
+        <h2>m/RelapseRegret</h2>
+        <p>A safe space to talk after relapse, without judgment.</p>
+        <span>👥 12.4k members · 🟢 187 online</span>
+      </div>
+    </a>
 
-    <div class="forum-card">
-      <h2>m/NoFapJourney</h2>
-      <p>Track progress, urges, and recovery milestones.</p>
-      <span>👥 22.1k members · 🟢 428 online</span>
-    </div>
+    <a href="Forums Detailed/forum.html?name=NoFapJourney" class="forum-link">
+      <div class="forum-card">
+        <h2>m/NoFapJourney</h2>
+        <p>Track progress, urges, and recovery milestones.</p>
+        <span>👥 22.1k members · 🟢 428 online</span>
+      </div>
+    </a>
 
-    <div class="forum-card">
-      <h2>m/AccountabilityCheck</h2>
-      <p>Daily check-ins to keep yourself honest.</p>
-      <span>👥 9.8k members · 🟢 143 online</span>
-    </div>
+    <a href="Forums Detailed/forum.html?name=AccountabilityCheck" class="forum-link">
+      <div class="forum-card">
+        <h2>m/AccountabilityCheck</h2>
+        <p>Daily check-ins to keep yourself honest.</p>
+        <span>👥 9.8k members · 🟢 143 online</span>
+      </div>
+    </a>
 
-    <div class="forum-card">
-      <h2>m/UrgeControl</h2>
-      <p>Talk about urges and how to overcome them.</p>
-      <span>👥 15.6k members · 🟢 261 online</span>
-    </div>
+    <a href="Forums Detailed/forum.html?name=UrgeControl" class="forum-link">
+      <div class="forum-card">
+        <h2>m/UrgeControl</h2>
+        <p>Talk about urges and how to overcome them.</p>
+        <span>👥 15.6k members · 🟢 261 online</span>
+      </div>
+    </a>
 
-    <div class="forum-card">
-      <h2>m/MentalFog</h2>
-      <p>Discuss brain fog, focus issues, and clarity.</p>
-      <span>👥 6.9k members · 🟢 89 online</span>
-    </div>
+    <a href="Forums Detailed/forum.html?name=MentalFog" class="forum-link">
+      <div class="forum-card">
+        <h2>m/MentalFog</h2>
+        <p>Discuss brain fog, focus issues, and clarity.</p>
+        <span>👥 6.9k members · 🟢 89 online</span>
+      </div>
+    </a>
 
-    <div class="forum-card">
-      <h2>m/LifeChangingStories</h2>
-      <p>Real transformation stories that inspire.</p>
-      <span>👥 27.4k members · 🟢 502 online</span>
-    </div>
+    <a href="Forums Detailed/forum.html?name=LifeChangingStories" class="forum-link">
+      <div class="forum-card">
+        <h2>m/LifeChangingStories</h2>
+        <p>Real transformation stories that inspire.</p>
+        <span>👥 27.4k members · 🟢 502 online</span>
+      </div>
+    </a>
 
-    <div class="forum-card">
-      <h2>m/OpioidUsers</h2>
-      <p>Support for people recovering from opioids.</p>
-      <span>👥 4.1k members · 🟢 54 online</span>
-    </div>
+    <a href="Forums Detailed/forum.html?name=OpioidUsers" class="forum-link">
+      <div class="forum-card">
+        <h2>m/OpioidUsers</h2>
+        <p>Support for people recovering from opioids.</p>
+        <span>👥 4.1k members · 🟢 54 online</span>
+      </div>
+    </a>
 
-    <div class="forum-card">
-      <h2>m/AlcoholRecovery</h2>
-      <p>Discuss sobriety, slips, and success.</p>
-      <span>👥 10.3k members · 🟢 176 online</span>
-    </div>
+    <a href="Forums Detailed/forum.html?name=AlcoholRecovery" class="forum-link">
+      <div class="forum-card">
+        <h2>m/AlcoholRecovery</h2>
+        <p>Discuss sobriety, slips, and success.</p>
+        <span>👥 10.3k members · 🟢 176 online</span>
+      </div>
+    </a>
 
-    <div class="forum-card">
-      <h2>m/AnxietyTalk</h2>
-      <p>Talk openly about anxiety and coping strategies.</p>
-      <span>👥 14.8k members · 🟢 233 online</span>
-    </div>
+    <a href="Forums Detailed/forum.html?name=AnxietyTalk" class="forum-link">
+      <div class="forum-card">
+        <h2>m/AnxietyTalk</h2>
+        <p>Talk openly about anxiety and coping strategies.</p>
+        <span>👥 14.8k members · 🟢 233 online</span>
+      </div>
+    </a>
 
-    <div class="forum-card">
-      <h2>m/DepressionSupport</h2>
-      <p>You’re not alone. Share and listen.</p>
-      <span>👥 19.7k members · 🟢 341 online</span>
-    </div>
+    <a href="Forums Detailed/forum.html?name=DepressionSupport" class="forum-link">
+      <div class="forum-card">
+        <h2>m/DepressionSupport</h2>
+        <p>You’re not alone. Share and listen.</p>
+        <span>👥 19.7k members · 🟢 341 online</span>
+      </div>
+    </a>
 
-    <div class="forum-card">
-      <h2>m/MotivationBoost</h2>
-      <p>Quotes, advice, and encouragement to keep going.</p>
-      <span>👥 21.9k members · 🟢 389 online</span>
-    </div>
+    <a href="Forums Detailed/forum.html?name=MotivationBoost" class="forum-link">
+      <div class="forum-card">
+        <h2>m/MotivationBoost</h2>
+        <p>Quotes, advice, and encouragement to keep going.</p>
+        <span>👥 21.9k members · 🟢 389 online</span>
+      </div>
+    </a>
 
-    <div class="forum-card">
-      <h2>m/EarlyRecovery</h2>
-      <p>Support for people in the first steps of recovery.</p>
-      <span>👥 8.6k members · 🟢 121 online</span>
-    </div>
+    <a href="Forums Detailed/forum.html?name=EarlyRecovery" class="forum-link">
+      <div class="forum-card">
+        <h2>m/EarlyRecovery</h2>
+        <p>Support for people in the first steps of recovery.</p>
+        <span>👥 8.6k members · 🟢 121 online</span>
+      </div>
+    </a>
 
-    <div class="forum-card">
-      <h2>m/Mindfulness</h2>
-      <p>Mindfulness, meditation, and emotional regulation.</p>
-      <span>👥 13.4k members · 🟢 204 online</span>
-    </div>
+    <a href="Forums Detailed/forum.html?name=Mindfulness" class="forum-link">
+      <div class="forum-card">
+        <h2>m/Mindfulness</h2>
+        <p>Mindfulness, meditation, and emotional regulation.</p>
+        <span>👥 13.4k members · 🟢 204 online</span>
+      </div>
+    </a>
 
   </div>
 </section>
 
-<!-- ================= SHARED HEADER LOGIC ================= -->
+<!-- ================= SCRIPTS ================= -->
 <script src="header.js"></script>
+
+<!-- FLOATING MONKEY -->
+<div id="monkey-float">
+  <img src="monkey-face.png" alt="Monkey">
+  <div class="monkey-tooltip">
+    Need help?<br>Chat with Monkey
+  </div>
+</div>
+
+<!-- MINI CHAT WINDOW -->
+<div id="monkey-chat">
+  <div class="chat-header">🐵 Monkey Helper</div>
+
+  <div class="chat-body" id="chatBody">
+    <div class="bot-msg">Hey 👋 I’m here with you.</div>
+  </div>
+
+  <div class="chat-input">
+    <input type="text" id="chatInput" placeholder="Type here..." />
+    <button id="sendBtn">Send</button>
+  </div>
+</div>
+
 
 </body>
 </html>

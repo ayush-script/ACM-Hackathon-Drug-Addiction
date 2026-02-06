@@ -95,5 +95,27 @@
 
 <script src="streaks.js"></script>
 <script src="header.js"></script>
+<!-- 🐵 FLOATING MONKEY CHAT -->
+<div id="monkey-float">
+  <img src="monkey-face.png" alt="Monkey Chat" />
+  <span class="monkey-tooltip">Need help? Chat with our Monkey</span>
+</div>
+
+<link rel="stylesheet" href="monkey-float.css">
+<script src="monkey-float.js"></script>
+<script src="monkey-float.html"></script>
+<!-- MONKEY CHAT FLOAT -->
+<link rel="stylesheet" href="monkey-float.css">
+<script src="monkey-float.js"></script>
+
+<!-- Inject monkey HTML -->
+<script>
+  fetch("monkey-float.html")
+    .then(res => res.text())
+    .then(html => {
+      document.body.insertAdjacentHTML("beforeend", html);
+    });
+</script>
+
 </body>
 </html>
