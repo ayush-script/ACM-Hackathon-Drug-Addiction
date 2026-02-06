@@ -182,15 +182,27 @@
 <!-- ================= SCRIPTS ================= -->
 <script src="header.js"></script>
 
+<!-- 🐵 FLOATING MONKEY CHAT -->
 <link rel="stylesheet" href="monkey-float.css">
+
+<div id="monkey-float">
+  <img src="monkey-face.png" alt="Monkey Chat" />
+  <span class="monkey-tooltip">Need help? Chat with our Monkey</span>
+</div>
+
+<div id="monkey-chat">
+  <div class="chat-header">🐵 Monkey Helper</div>
+  <div class="chat-body" id="chatBody">
+    <div class="bot-msg">Hey 👋 I’m here with you.</div>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="chatInput" placeholder="Type here..." />
+    <button id="sendBtn">Send</button>
+  </div>
+</div>
+
 <script src="monkey-float.js"></script>
-<script>
-  fetch("monkey-float.html")
-    .then(res => res.text())
-    .then(html => {
-      document.body.insertAdjacentHTML("beforeend", html);
-    });
-</script>
+
 
 </body>
 </html>
